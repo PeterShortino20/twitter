@@ -1,0 +1,24 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "twitter api use",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PeterShortino20/twitter.git"
+  },
+  "keywords": [
+    "twitter",
+    "twit",
+    "bot"
+  ],
+  "author": "\"\"",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PeterShortino20/twitter/issues"
+  },
+  "homepage": "https://github.com/PeterShortino20/twitter#readme"
+}
