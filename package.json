@@ -23,6 +23,6 @@
   },
   "homepage": "https://github.com/PeterShortino20/twitter#readme",
   "dependencies": {
-    "twitter-lite": "^0.14.0"
+    "twit": "^2.2.11"
   }
 }
