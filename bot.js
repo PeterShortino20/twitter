@@ -1,2 +1,3 @@
-console.log('Bot is starting');
 import Twit from 'twit';
+import  keys from './config.js';
+var T = new Twit(keys);

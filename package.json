@@ -24,5 +24,6 @@
   "homepage": "https://github.com/PeterShortino20/twitter#readme",
   "dependencies": {
     "twit": "^2.2.11"
-  }
+  },
+  "type": "module"
 }
