@@ -1,5 +1,5 @@
-import Twit from 'twit';
-import  keys from './config.js';
+const Twit = require('twit');
+const keys = require('./config');
 
 
 
