@@ -1,8 +1,9 @@
+//All imports needed
 const Twit = require('twit');
-const keys = require('./config');
+const keys = require('../config');
+const content = require('./quotes');
 
-
-
+//Initiate connection to twitter api
 const T = new Twit(keys);
 
 const tweet = {
@@ -18,12 +19,3 @@ function tweeted(err, data, response){
         console.log(data);
     }
 }
-
-//T.get('search/tweets', { q: 'rainbow', count:10}, function(err, data, response){
-//    console.log(data)
-//});
-
-//function gotData(err, data, response) { 
-//    console.log(gotData);
-//};
-//console.log(gotData);
