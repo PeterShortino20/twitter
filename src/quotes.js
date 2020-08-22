@@ -10,7 +10,7 @@ const quote1 = book.text[num1];
 const quote2 = book.text[num2];
 
 //Combine into one large quote for a future tweet
-const twitquote = String(quote1 + quote2)
-
+const twitquote = String(quote1 + quote2 + ' #Resistance #WarofArt');
+console.log(twitquote);
 //Export the quote for later twitter use in bot.js
 module.exports.twitquote = twitquote;

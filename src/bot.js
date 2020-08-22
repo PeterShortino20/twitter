@@ -7,8 +7,8 @@ const content = require('./quotes');
 const T = new Twit(keys);
 
 const tweet = {
-    status: 'Resistance will always exist, make overcoming it a habit'
-}
+    status: content.twitquote
+};
 
 T.post('statuses/update', tweet, tweeted);
 
