@@ -2,6 +2,7 @@
 const Twit = require('twit');
 const keys = require('../config');
 const content = require('./quotes');
+const quotes = content.getQuotes();
 
 //Initiate connection to twitter api
 const T = new Twit(keys);
@@ -9,11 +10,11 @@ const T = new Twit(keys);
 
 //Send a Tweet every 4 hours
 updateStatus();
-setInterval(updateStatus, 14400000);
+//setInterval(updateStatus, 14400000);
 
 function updateStatus(){
     let tweet = {
-        status: content.getQuotes()
+        status: quotes
     };
     T.post('statuses/update', tweet, tweeted);
 

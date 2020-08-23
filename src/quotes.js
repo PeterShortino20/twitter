@@ -2,7 +2,6 @@ const book = require('./book');
 
 //Generating random number based on the length of the Array of text. This number will be used as the index to
 //pull information from. We will also need the next index following the one chosen.
-
 function getQuotes(){
     const num1 = Math.floor(Math.random() * book.amount);
     const num2 = num1 + 1;
