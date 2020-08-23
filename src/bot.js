@@ -2,7 +2,7 @@
 const Twit = require('twit');
 const keys = require('../config');
 const content = require('./quotes');
-const quotes = content.getQuotes();
+let quotes = content.getQuotes();
 
 //Initiate connection to twitter api
 const T = new Twit(keys);
