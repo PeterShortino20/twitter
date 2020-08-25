@@ -4,7 +4,6 @@ const fs = require('fs');
 //Split the end of every sentence into its own index within the array with all the book text. 
 const book = fs.readFileSync('../pressfield/woabook.txt').toString();
 const text = book.replace(/(\r\n|\n|\r|\f)/gm," ").replace(/[.]/g,".|").replace(/[!]/g,"!|").replace(/[?]/g,"?|").replace(/[:|'|"]/gm,"|").split("|");
-//console.log(text);
 const amount = text.length;
 
 //Export modules for outside use
