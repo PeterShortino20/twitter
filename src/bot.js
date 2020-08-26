@@ -9,10 +9,10 @@ const T = new Twit(keys);
 //Declare tweet variable for use
 
 //Send a Tweet every 4 hours
-updateStatus();
-//setInterval(updateStatus, 14400000);
+statusQuotes();
+//setInterval(statusQuotes, 14400000);
 
-function updateStatus(){
+function statusQuotes(){
     let tweet = {
         status: quotes
     };
@@ -26,3 +26,4 @@ function updateStatus(){
         }
     };
 };
+//Build function for tweeting image once every x amount of time. 
