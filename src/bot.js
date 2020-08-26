@@ -1,6 +1,6 @@
 //All imports needed
 const Twit = require('twit');
-const keys = require('../config');
+const keys = require('./config');
 const content = require('./quotes');
 let quotes = content.getQuotes();
 
