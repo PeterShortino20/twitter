@@ -10,7 +10,7 @@ const T = new Twit(keys);
 
 //Send a Tweet every 4 hours
 statusQuotes();
-//setInterval(statusQuotes, 14400000);
+setInterval(statusQuotes, 14400000);
 
 function statusQuotes(){
     let tweet = {
