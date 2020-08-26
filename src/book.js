@@ -5,7 +5,6 @@ const fs = require('fs');
 const book = fs.readFileSync('../pressfield/woabook.txt').toString();
 const text = book.replace(/(\r\n|\n|\r|\f)/gm," ").replace(/[.]/g,".|").replace(/[!]/g,"!|").replace(/[?]/g,"?|").replace(/[:|'|"]/gm,"|").split("|");
 const amount = text.length;
-
 //Export modules for outside use
 module.exports.text = text;
 module.exports.amount = amount;
