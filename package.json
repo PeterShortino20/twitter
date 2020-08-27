@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/PeterShortino20/twitter#readme",
   "dependencies": {
+    "dotenv": "^8.2.0",
     "twit": "^2.2.11"
   }
 }
