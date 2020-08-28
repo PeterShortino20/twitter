@@ -1,4 +1,5 @@
 const fs = require('fs');
+const assert = require('assert');
 
 // Read pdf file into variable book, use book variable to replace end of sentence punctuation with a | for easy identification
 //Split the end of every sentence into its own index within the array with all the book text. 
