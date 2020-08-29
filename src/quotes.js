@@ -5,10 +5,9 @@ const book = require('./text');
 function getQuotes(){
     const num1 = Math.floor(Math.random() * book.amount);
     const num2 = num1 + 1;
-
 //Put the two quotes from the book into thier own objects quote1 and quote2
-    const quote1 = book.text[num1];
-    const quote2 = book.text[num2];
+    const quote1 = book[num1];
+    const quote2 = book[num2];
     const combined = String(quote1 + quote2).length;
 
 //Combine into one large quote for a future tweet. The if statement takes into account the formatting

@@ -1,9 +1,22 @@
 const fs = require('fs');
-// Read pdf file into variable book, use book variable to replace end of sentence punctuation with a | for easy identification
-//Split the end of every sentence into its own index within the array with all the book text. 
-const book = fs.readFileSync('../pressfield/the-war-of-art.txt').toString();
-const text = book.replace(/(\r\n|\n|\r|\f)/gm," ").replace(/[.]/g,".|").replace(/[!]/g,"!|").replace(/[?]/g,"?|").replace(/[:|'|"]/gm,"|").split("|");
-const amount = text.length;
+const aws = require('aws-sdk');
+
+const s3 = new aws.S3({ accessKeyId: process.env.AWS_ACCESS_KEY_ID, secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY });
+const params = {
+    Bucket: process.env.S3_BUCKET,
+    Key: process.env.S3_KEY
+};
+
+s3.getObject(params, function(err,data){
+    if (err){
+        return data.body;
+    } else {
+        return data.Body
+    }
+});
+//const book = fs.readFileSync();
+//const text = book.replace(/(\r\n|\n|\r|\f)/gm," ").replace(/[.]/g,".|").replace(/[!]/g,"!|").replace(/[?]/g,"?|").replace(/[:|'|"]/gm,"|").split("|");
+//const amount = text.length;
 //Export modules for outside use
-module.exports.text = text;
-module.exports.amount = amount;
+//module.exports.text = text;
+//module.exports.amount = amount;
