@@ -1,5 +1,6 @@
 //All imports needed
 const Twit = require('twit');
+const content = require('./quotes');
 require('dotenv').config();
 
 const keys = {
@@ -8,7 +9,6 @@ const keys = {
     access_token: process.env.access_token,
     access_token_secret: process.env.access_token_secret
 };
-const content = require('./quotes');
 let quotes = content.getQuotes();
 
 
@@ -18,7 +18,6 @@ const T = new Twit(keys);
 
 //Send a Tweet every 4 hours
 statusQuotes();
-setInterval(statusQuotes, 14400000);
 
 function statusQuotes(){
     let tweet = {
