@@ -7,4 +7,4 @@ const text = book.replace(/(\r\n|\n|\r|\f)/gm," ").replace(/[.]/g,".|").replace(
 const amount = text.length;
 //Export modules for outside use
 module.exports.text = text;
-module.exports.amount = amount;
+module.exports.amount = amount
